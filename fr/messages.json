@@ -1,0 +1,393 @@
+{
+  "extensionName" : {
+    "message"     : "Lecture tranquille",
+    "description" : "French name of the Tranquility Reader extension"
+  },
+  
+  "extensionDescription" : {
+    "message"     : "Améliore la lisibilité d’une page web.",
+    "description" : "French description of the Tranquility Reader extension"
+  },
+
+  "extensionBrowserActionTitle" : {
+    "message"     : "Lire tranquillement",
+    "description" : "French title for the browser action"
+  },
+
+  "extensionCommandRunDescription" : {
+    "message"     : "Exécuter sur la page courante",
+    "description" : "French description for the keyboard command shortcut to run extension"
+  },
+
+  "extensionCommandShowPreferencesDescription" : {
+    "message"     : "Afficher les options",
+    "description" : "French description for the keyboard command shortcut to show extension preferences"
+  },
+
+  "extensionCommandShowOfflinePagesDescription" : {
+    "message"     : "Afficher les pages hors ligne",
+    "description" : "French description for the keyboard command shortcut to show offline pages"
+  },
+
+  "extensionRunTranquilityFromContextMenu" : {
+    "message"     : "Lire tranquillement",
+    "description" : "French description for running Tranquility from right click context menu"
+  },
+  
+  "extensionAddTranquilityAnnotationFromContextMenu" : {
+    "message"     : "Ajouter une note",
+    "description" : "French description for adding a Tranquility annotation note on selected text from right click context menu"
+  },
+
+  "extensionRunTranquilityOnSelectionFromContextMenu" : {
+    "message"     : "Lire tranquillement la sélection",
+    "description" : "French description for running Tranquility on selected text from right click context menu"
+  },
+  
+  "runTranquilityFromBrowserAction" : {
+    "message"     : "Exécuter",
+    "description" : "French text for Browser Action Popup to run Tranquility on a page"
+  },
+
+  "runTranquilityReadLaterFromBrowserAction" : {
+    "message"     : "Lire plus tard",
+    "description" : "French text for Browser Action Popup to run Tranquility on a page and save the page for reading later"
+  },
+
+  "runTranquilityViewOfflinePagesFromBrowserAction" : {
+    "message"     : "Voir les pages hors ligne",
+    "description" : "French text for Browser Action Popup to view list of offline pages"
+  },
+  
+  "runTranquilityExportOfflinePagesFromBrowserAction" : {
+    "message"     : "Exporter les pages hors ligne",
+    "description" : "French text for Browser Action Popup to export offline pages to a json file"
+  },
+
+  "runTranquilityImportOfflinePagesFromBrowserAction" : {
+    "message"     : "Importer des pages hors ligne",
+    "description" : "French text for Browser Action Popup to import offline pages from a json file"
+  },
+
+  "runTranquilityOptionsFromBrowserAction" : {
+    "message"     : "Afficher les options",
+    "description" : "French text for Browser Action Popup to open the Tranquility options_ui web page"
+  },  
+  
+  "singlePageString" : { 
+    "message"     : "PAGEUNIQUE,VOIRCOMMEUNEPAGEUNIQUE,IMPRIMER",
+    "description" : "List of Strings that indicate a SINGLE page view or a Print view is available"
+  },
+  
+  "navigationString" : {
+    "message"     : "SUIVANT,SUIVANT>,PRÉC,<PRÉC,PRÉCÉDENT,<PRÉCÉDENT,PAGESUIVANTE,PAGESUIVANTE>,PAGEPRÉCÉDENTE,<PAGEPRÉCÉDENTE,CHAPITRESUIVANT,CHAPITREPRÉCÉDENT,ARTICLESUIVANT,ARTICLEPRÉCÉDENT,ARTICLEPRÉC,PREMIER,<<PREMIER,DERNIER,DERNIER>>,<,<<,>,>>",
+    "description" : "List of Strings that indicate that we have a multi-page document with additional links"
+  },
+  
+  "waitingForLoadNotification" : {
+    "message"     : "Lecture tranquille attend la fin du chargement de la page web…",
+    "description" : "Message to indicate tranquility is still waiting for the page to finish loading"
+  },
+
+  "insufficientContentNotification" : {
+    "message"     : "Lecture tranquille a trouvé très peu de contenu textuel, retour à la page web d’origine dans 5 secondes…",
+    "description" : "Message to indicate that the web page does not have much text content and so tranquility is not going to do anything"
+  },
+
+  "dbOpenErrorString" : {
+    "message"     : "Impossible d’ouvrir la base de données. Erreur dans la base de données : $DBERROR$",
+    "description" : "Error thrown when Tranquility is unable to open the IndexedDB database",
+    "placeholders": {
+      "dberror" : {
+        "content" : "$1",
+        "example" : "Error!"
+      }
+    }
+  },
+
+  "duplicateURLErrorString" : {
+    "message"     : "Erreur dans la base de données : lien probablement en double.",
+    "description" : "Thrown when trying to store multiple copies of the same webpage for offline viewing"
+  },
+
+  "urlNotFoundErrorString" : {
+    "message"     : "Impossible de trouver le document d’URL : $URL$",
+    "description" : "Database does not contain any offline document with specified url key",
+    "placeholders": {
+      "url" : {
+        "content" : "$1",
+        "example" : "https://developer.mozilla.org"
+      }
+    }
+  },
+
+  "urlNotDeletedErrorString" : {
+    "message"     : "Impossible de supprimer le document d’URL : $URL$",
+    "description" : "Unable to delete record in database with the specified url key",
+    "placeholders": {
+      "url" : {
+        "content" : "$1",
+        "example" : "https://developer.mozilla.org"
+      }
+    }
+  },
+
+  "exportNotesLinkContent": {
+    "message"     : "Faire un clic droit et choisir « Enregistrer sous… » pour exporter les données hors ligne.",
+    "description" : "Text content for the link for exporting the offline content to a json file"
+  },
+  
+  "importNotesLabelContent": {
+    "message"     : "Cliquer pour sélectionner le fichier à importer…",
+    "description" : "Text content for the link for import the offline content from a json file"
+  },
+
+  "readlater" : {
+    "message"     : "Lire plus tard",
+    "description" : "display text for read later div"
+  },
+
+  "morelinks" : {
+    "message"     : "Autres liens",
+    "description" : "display text for more links div"
+  },
+  "offlinelinks" : {
+    "message"     : "Liens hors ligne",
+    "description" : "display text for offline links div"
+  },
+  
+  "viewnotes" : {
+    "message"     : "Voir les notes",
+    "description" : "display text for view notes div"
+  },
+
+  "noNotes" : {
+    "message"     : "Il n’y a pas de note pour l’instant. Pour en ajouter, sélectionner le texte à annoter, faire un clic droit et sélectionner l’entrée « Ajouter une note » du menu « Lecture tranquille ».",
+    "description" : "Notify user that they do not have any annotation notes to display"
+  },
+
+  "expandMenuString" : {
+    "message"     : "Cliquer pour développer le menu",
+    "description" : "Help message to indicate how to show/hide the menu bar at the bottom"
+  },
+
+  "prefslink" : {
+    "message"     : "Options",
+    "description" : "Text that indicates that the gear symbol is the preferences page URL"
+  },
+
+  "originallink" : {
+    "message"     : "URL source",
+    "description" : "Text that indicates that the link symbol is the original source URL"
+  },
+
+  "saveaspdf" : {
+    "message"     : "Enregistrer la page au format PDF",
+    "description" : "Button to save the processed page to a PDF file"
+  },
+
+  "pageDown" : {
+    "message"     : "Descendre d’une page",
+    "description" : "Button to scroll down one page"
+  },
+
+  "pageUp" : {
+    "message"     : "Remonter d’une page",
+    "description" : "Button to scroll up one page"
+  },
+
+  "readLaterNotSupportedString" : {
+    "message"     : "La fonction « Lire plus tard » n’est pas prise en charge en mode de navigation privée.",
+    "description" : "IndexedDB is not available in the Private browsing mode"
+  },
+
+  "extensionShowOptionsWindowFromToolsMenu" : {
+    "message"     : "Afficher les options",
+    "description" : "French description for displaying Tranquility Reading options/settings window on clicking item in tools menu through right click on toolbar icon"
+  },
+
+  // Options page
+
+  "optionsOfflinePagesHeader" : {
+    "message"     : "Pages hors ligne"
+  },
+
+  "optionsOfflinePagesView" : {
+    "message"     : "Voir"
+  },
+
+  "optionsOfflinePagesExport" : {
+    "message"     : "Exporter"
+  },
+
+  "optionsOfflinePagesImport" : {
+    "message"     : "Importer"
+  },
+
+  "optionsToolbarIconHeader" : {
+    "message"     : "Icône de la barre d’outils"
+  },
+
+  "optionsBrowserActionIconLabel" : {
+    "message"     : "Icône choisie :"
+  },
+
+  "optionsBrowserActionIconDefault" : {
+    "message"     : "Par défaut"
+  },
+
+  "optionsBrowserActionIconGrayscale" : {
+    "message"     : "Niveaux de gris"
+  },
+
+  "optionsPresetsHeader" : {
+    "message"     : "Thème prédéfini"
+  },
+
+  "optionsSelectedPresetLabel" : {
+    "message"     : "Thème sélectionné :"
+  },
+
+  "optionsFontsColorsHeader" : {
+    "message"     : "Police et couleurs"
+  },
+
+  "optionsBackgroundColor" : {
+    "message"     : "Couleur de l’arrière-plan :"
+  },
+
+  "optionsFontColor" : {
+    "message"     : "Couleur du texte :"
+  },
+
+  "optionsLinkColor" : {
+    "message"     : "Couleur des liens :"
+  },
+
+  "optionsAnnotationHighlightColor" : {
+    "message"     : "Couleur de surlignage des notes :"
+  },
+
+  "optionsFontName" : {
+    "message"     : "Nom de la police :"
+  },
+
+  "optionsFontSize" : {
+    "message"     : "Taille de la police :"
+  },
+
+  "optionsTextImageHeader" : {
+    "message"     : "Texte et images"
+  },
+
+  "optionsHideImages" : {
+    "message"     : "Masquage des images :"
+  },
+
+  "optionsHideImagesNever" : {
+    "message"     : "Jamais"
+  },
+
+  "optionsHideImagesAlways" : {
+    "message"     : "Toujours"
+  },
+
+  "optionsHideImagesPrint" : {
+    "message"     : "Seulement à l’impression"
+  },
+
+  "optionsReadingWidth" : {
+    "message"     : "Largeur de la zone de lecture :"
+  },
+
+  "optionsNumColumns" : {
+    "message"     : "Nombre de colonnes :"
+  },
+
+  "optionsLineHeight" : {
+    "message"     : "Hauteur de ligne :"
+  },
+
+  "optionsTextAlign" : {
+    "message"     : "Alignement du texte :"
+  },
+
+  "optionsTextAlignLeft" : {
+    "message"     : "Gauche"
+  },
+
+  "optionsTextAlignJustify" : {
+    "message"     : "Justifié"
+  },
+
+  "optionsTextAlignRight" : {
+    "message"     : "Droite"
+  },
+
+  "optionsPdfPreferencesHeader" : {
+    "message"     : "Enregistrement en PDF"
+  },
+
+  "optionsPdfPaperSizeLabel" : {
+    "message"     : "Format :"
+  },
+
+  "optionsPdfPaperSizeLetter" : {
+    "message"     : "Lettre"
+  },
+
+  "optionsPdfPaperSizeA4" : {
+    "message"     : "A4"
+  },
+
+  "optionsPdfHeaderFooterLabel" : {
+    "message"     : "En-têtes et pieds de page :"
+  },
+
+  "optionsPdfHeaderFooterBoth" : {
+    "message"     : "Les deux"
+  },
+
+  "optionsPdfHeaderFooterNeither" : {
+    "message"     : "Aucun"
+  },
+
+  "optionsPdfHeaderOnly" : {
+    "message"     : "En-têtes seuls"
+  },
+
+  "optionsPdfFooterOnly" : {
+    "message"     : "Pieds de page seuls"
+  },
+
+  "optionsCustomPresetTitle" : {
+    "message"     : "Taper le nom du thème personnalisé à créer ou supprimer"
+  },
+
+  "optionsCustomPresetName" : {
+    "message"     : "Thème personnalisé :"
+  },
+
+  "optionsDeletePreset" : {
+    "message"     : "Supprimer"
+  },
+
+  "optionsSaveChanges" : {
+    "message"     : "Enregistrer"
+  },
+
+  //Various additions
+  
+  "annotationSubmitButton" : {
+    "message"     : "Ajouter"
+  },
+  
+  "annotationCancelButton" : {
+    "message"     : "Annuler"
+  },
+  
+  "exportFileName": {
+    "message": "export_lecture_tranquille_"
+  }
+
+}
